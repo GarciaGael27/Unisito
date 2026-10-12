@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gaceta universitaria de demostración: ciencia, cultura y vida en comunidad.">
+  <meta name="theme-color" content="#702b3b">
+  <title>La Gaceta | Universidad del Horizonte</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="config.js"></script>
+  <script defer src="noticias.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#noticias">Saltar a las noticias</a>
+  <div class="institution-bar"><span>UH / UNIVERSIDAD DEL HORIZONTE</span><span>Conocimiento que nos une</span></div>
+  <header class="masthead wrapper">
+    <div class="edition">PUBLICACIÓN UNIVERSITARIA<br><strong>Edición 01 · Octubre 2026</strong></div>
+    <a class="brand" href="index.html" aria-label="La Gaceta, inicio">La Gaceta<span>IDEAS · VOCES · COMUNIDAD</span></a>
+    <a class="outline-button" href="#acerca">Conoce la gaceta <span aria-hidden="true">↗</span></a>
+  </header>
+  <nav class="main-nav" aria-label="Navegación principal"><div class="wrapper nav-inner"><a href="#noticias">Actualidad</a><a href="#agenda">Agenda universitaria</a><a href="#comunidad">Nuestra comunidad</a><a href="#acerca">Acerca de</a><span class="nav-note">UNA MIRADA A LO QUE NOS MUEVE</span></div></nav>
+  <main class="wrapper">
+    <div class="issue-line"><span><span class="dot" aria-hidden="true"></span> EL PULSO DE NUESTRA UNIVERSIDAD</span><span>Práctica educativa · Contenido ficticio</span></div>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy"><p class="eyebrow">EN PORTADA / VIDA UNIVERSITARIA</p><h1 id="hero-title">El futuro se construye<br><em>en comunidad.</em></h1><p>Un nuevo espacio para compartir las ideas, los descubrimientos y las historias que dan vida a nuestra universidad.</p><div class="hero-bottom"><button class="solid-button" data-article="comunidad">Leer la historia <span aria-hidden="true">↗</span></button><span>Redacción UH<br><time datetime="2026-10-09">9 de octubre de 2026</time></span></div></div>
+      <div class="campus-art" role="img" aria-label="Ilustración del campus universitario con arcos, árboles y un sol al atardecer"><div class="art-sun"></div><div class="art-cloud"></div><div class="building"><div class="building-label">UNIVERSIDAD DEL HORIZONTE</div><div class="arches"><i></i><i></i><i></i><i></i><i></i></div><div class="steps"></div></div><div class="tree tree-one"></div><div class="tree tree-two"></div><span class="art-caption">CAMPUS CENTRAL — UN LUGAR PARA ENCONTRARNOS</span></div>
+    </section>
+    <div class="content-layout">
+      <section id="noticias" aria-labelledby="news-title"><div class="section-heading"><div><p class="eyebrow">LO QUE ESTÁ PASANDO</p><h2 id="news-title">Actualidad universitaria</h2></div><span class="section-number">01 — 06</span></div>
+        <div class="news-controls"><div class="filters" role="group" aria-label="Filtrar por categoría"><button data-category="Todas" aria-pressed="true">Todas</button><button data-category="Academia" aria-pressed="false">Academia</button><button data-category="Ciencia" aria-pressed="false">Ciencia</button><button data-category="Cultura" aria-pressed="false">Cultura</button><button data-category="Comunidad" aria-pressed="false">Comunidad</button></div><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Buscar una noticia…" aria-label="Buscar noticias" maxlength="150"></label></div>
+        <div class="results-row"><p id="results-count" role="status">Cargando noticias…</p><button id="saved-filter" class="text-button" aria-pressed="false">Ver guardadas</button></div>
+        <p id="source-status" class="source-status" role="status"></p><div id="news-grid" class="news-grid"></div><p id="empty-state" hidden>No encontramos noticias. Prueba otra búsqueda o categoría.</p>
+        <noscript><p>Activa JavaScript para consultar las noticias y sus filtros. Puedes leer la agenda y la información de la gaceta sin activarlo.</p></noscript>
+      </section>
+      <aside id="agenda" aria-labelledby="agenda-title"><div class="section-heading"><div><p class="eyebrow">HAZ ESPACIO EN TU CALENDARIO</p><h2 id="agenda-title">En la agenda</h2></div><span aria-hidden="true">↗</span></div><p class="agenda-note">Octubre 2026 · Actividades de ejemplo</p>
+        <article class="event"><time datetime="2026-10-15"><strong>15</strong>OCT</time><div><span class="eyebrow">CONVERSATORIO</span><h3>La inteligencia artificial en el aula</h3><p>11:00 h · Auditorio central</p></div></article>
+        <article class="event"><time datetime="2026-10-21"><strong>21</strong>OCT</time><div><span class="eyebrow">CULTURA</span><h3>Encuentro de voces universitarias</h3><p>17:00 h · Foro al aire libre</p></div></article>
+        <article class="event"><time datetime="2026-10-28"><strong>28</strong>OCT</time><div><span class="eyebrow">TALLER</span><h3>Tu primera investigación</h3><p>10:00 h · Biblioteca central</p></div></article>
+        <div class="editorial-note"><span class="quote-mark" aria-hidden="true">“</span><p>Una universidad también se cuenta a través de las voces de quienes la habitan.</p><span>EL ESPÍRITU DE ESTA GACETA</span></div>
+      </aside>
+    </div>
+    <section id="comunidad" class="community"><span class="community-symbol" aria-hidden="true">✳</span><div><p class="eyebrow">NUESTRA COMUNIDAD</p><h2>Todas las historias tienen un lugar.</h2><p>Estudiantes, docentes y personal universitario: una comunidad con mucho que contar.</p></div><button class="outline-button" data-article="comunidad">Nuestra historia <span aria-hidden="true">↗</span></button></section>
+    <section id="acerca" class="about"><h2>Una ventana a la vida universitaria.</h2><div><p>La Gaceta es una publicación de demostración de la Universidad del Horizonte, una institución ficticia. Reúne noticias académicas, proyectos científicos y expresiones culturales en un espacio abierto a la comunidad.</p><p>Esta práctica está desarrollada con HTML, CSS y JavaScript. Las noticias, fechas y actividades son ejemplos educativos.</p></div></section>
+  </main>
+  <footer><div class="wrapper footer-inner"><span class="footer-brand">La Gaceta<span>Universidad del Horizonte</span></span><p>Proyecto educativo · 2026<br>Hecho para aprender y compartir.</p><a href="#">Volver arriba ↑</a></div></footer>
+  <dialog id="article-dialog" aria-labelledby="article-title"><div class="dialog-toolbar"><span>LA GACETA / LECTURA</span><button id="close-dialog" class="outline-button" autofocus>Cerrar <span aria-hidden="true">×</span></button></div><article><p id="article-category" class="eyebrow"></p><h2 id="article-title"></h2><p id="article-meta" class="article-meta"></p><div id="article-body"></div></article><div class="dialog-actions"><button id="save-article" class="solid-button" aria-pressed="false">Guardar noticia</button><button id="print-article" class="outline-button">Imprimir artículo</button></div><p id="save-status" role="status"></p></dialog>
+</body>
+</html>
